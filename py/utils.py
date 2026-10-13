@@ -16,6 +16,14 @@ def get_vr(r, prstar, pph, a):
     return Ap * rc / r * prstar / Horb
 
 
+def compute_xH(a, Shh=10):
+    """
+    Horizon location in the hyperboloidal radial coordinate used by Teukode
+    """
+    rplus = 1.0 + np.sqrt(1.0 - a**2)
+    return rplus / (1.0 + rplus / Shh)
+
+
 def adv_time_in(a, r0, Shh=10):
     """
     Calculate initial advanced time at horizon for orbit with initial radius r0
@@ -160,7 +168,7 @@ def OmegaTS_p(r, pph, pr, nu, a, model="base", emm=None, newfact=None):
                         - 0.5 * (1.0 + nu) * pph**2 / r**2
                         - 1.0 / r
                         + 0.5 * (1.0 - 2 * m1 - 3.0 * nu) * pr**2
-                        - 16.0 * m1 * pr / r
+                        - 16.0 / 3.0 * m1 * pr / r
                     )
                 )
             else:
@@ -208,7 +216,7 @@ def OmegaTE_p(r, pph, pr, nu, a, model="base", emm=None, newfact=None):
                 * (
                     1.0
                     - 0.5 * (1.0 + nu) * pr**2
-                    + (romg_coeff + 6.0 * m1 + 3.0 * nu) * K / r
+                    + (romg_coeff + m1 + 0.5 * nu) * K / r
                     + (-4.5 - 11.0 / 3.0 * m1 - nu) / r
                 )
                 + 16.0 / 3.0 * m1 * pr / r**2 * (K - 1.0)
@@ -230,7 +238,7 @@ def OmegaTE_p(r, pph, pr, nu, a, model="base", emm=None, newfact=None):
                 * (
                     1.0
                     - 0.5 * (1.0 + nu) * pr**2
-                    + (romg_coeff + 6.0 * m1 + 3.0 * nu) * pph**2 / r**2
+                    + (romg_coeff + m1 + 0.5 * nu) * pph**2 / r**2
                     + (-3.0 - 11.0 / 3.0 * m1 - nu) / r
                 )
                 + 16.0 / 3.0 * m1 * pr / r**3 * (pph**2 - r)

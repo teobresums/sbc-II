@@ -19,7 +19,8 @@ Italy <br>
 <sup>6</sup>Friedrich-Schiller-University Jena, Theoretisch-Physikalisches Institut, 07743 Jena, Germany <br>
 </p>
 
-Data and scripts behind [arxiv:2603.28982](https://arxiv.org/abs/2603.28982)
+Data release for [arxiv:2603.28982](https://arxiv.org/abs/2603.28982).
+Note that the full simulations data is available through Zenodo at [10.5281/zenodo.19800342](10.5281/zenodo.19800342). Here, we also provide post-processed data and scripts to reproduce the main reults of the manuscript, see the [paper_plots](py/paper_plots.ipynb) notebook.
 
 If you use data associated to this release, please cite:
 ```
@@ -31,5 +32,44 @@ If you use data associated to this release, please cite:
     primaryClass = "gr-qc",
     month = "3",
     year = "2026"
+}
+
+@article{Harms:2014dqa,
+    author = "Harms, Enno and Bernuzzi, Sebastiano and Nagar, Alessandro and Zenginoglu, An",
+    title = "{A new gravitational wave generation algorithm for particle perturbations of the Kerr spacetime}",
+    eprint = "1406.5983",
+    archivePrefix = "arXiv",
+    primaryClass = "gr-qc",
+    doi = "10.1088/0264-9381/31/24/245004",
+    journal = "Class. Quant. Grav.",
+    volume = "31",
+    number = "24",
+    pages = "245004",
+    year = "2014"
+}
+
+@article{Harms:2013ib,
+    author = {Harms, Enno and Bernuzzi, Sebastiano and Br{\"u}gmann, Bernd},
+    title = "{Numerical solution of the 2+1 Teukolsky equation on a hyperboloidal and horizon penetrating foliation of Kerr and application to late-time decays}",
+    eprint = "1301.1591",
+    archivePrefix = "arXiv",
+    primaryClass = "gr-qc",
+    doi = "10.1088/0264-9381/30/11/115013",
+    journal = "Class. Quant. Grav.",
+    volume = "30",
+    pages = "115013",
+    year = "2013"
+}
+
+@article{Poisson:2004cw,
+    author = "Poisson, Eric",
+    title = "{Absorption of mass and angular momentum by a black hole: Time-domain formalisms for gravitational perturbations, and the small-hole / slow-motion approximation}",
+    eprint = "gr-qc/0407050",
+    archivePrefix = "arXiv",
+    doi = "10.1103/PhysRevD.70.084044",
+    journal = "Phys. Rev. D",
+    volume = "70",
+    pages = "084044",
+    year = "2004"
 }
 ```
