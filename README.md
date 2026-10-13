@@ -20,7 +20,7 @@ Italy <br>
 </p>
 
 Data release for [arxiv:2603.28982](https://arxiv.org/abs/2603.28982).
-Note that the full simulations data is available through Zenodo at [10.5281/zenodo.19800342](10.5281/zenodo.19800342). Here, we also provide post-processed data and scripts to reproduce the main reults of the manuscript, see the [paper_plots](py/paper_plots.ipynb) notebook.
+Note that the full simulations data is available through Zenodo at [10.5281/zenodo.19800342](https://doi.org/10.5281/zenodo.19800342). Here, we also provide post-processed data and scripts to reproduce the main reults of the manuscript, see the [paper_plots](py/paper_plots.ipynb) notebook.
 
 If you use data associated to this release, please cite:
 ```
